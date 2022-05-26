@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-// import propertyImg from '../public/assets/projects/property.jpg';
-// import cryptoImg from '../public/assets/projects/crypto.jpg'
-// import netflixImg from '../public/assets/projects/netflix.jpg'
+import fakenewsImg from '../public/assets/projects/fakenews.png';
+import dictionaryImg from '../public/assets/projects/dictionary.png'
+import kayaImg from '../public/assets/projects/kaya.png'
 // import twitchImg from '../public/assets/projects/twitch.jpg'
 import ProjectItem from './ProjectItem';
 
@@ -16,21 +16,24 @@ const Projects = () => {
         </p>
         <h2 className='py-4'>What I've Built</h2>
         <div className='grid md:grid-cols-2 gap-8'>
-          {/* <ProjectItem
-            title='Property Finder'
+          <ProjectItem
+            title='Fake News Detector'
             backgroundImg={fakenewsImg}
-            projectUrl='/property'
-          />
+            projectUrl='/fakenews'
+            tech="Django, Sklearn"
+          /> 
           <ProjectItem
-            title='Crypto App'
+            title='Dictionary App'
             backgroundImg={dictionaryImg}
-            projectUrl='/crypto'
+            projectUrl='/dictionary'
+            tech="Javascript, CSS, HTML"
           />
           <ProjectItem
-            title='Netflix App'
+            title='Product Landing Page'
             backgroundImg={kayaImg}
-            projectUrl='/netflix'
-          /> */}
+            projectUrl='/kaya'
+            tech="Javascript, CSS, HTML"
+          /> 
           {/* <ProjectItem
             title='Twitch UI'
             backgroundImg={twitchImg}

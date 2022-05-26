@@ -5,12 +5,15 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useRouter } from 'next/router';
+import { SiLeetcode } from 'react-icons/si';
+
+
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState('#ecf0f3');
-  const [linkColor, setLinkColor] = useState('#1f2937');
+  const [linkColor, setLinkColor] = useState('#ecf0f3');
   const router = useRouter();
 
   useEffect(() => {
@@ -20,11 +23,11 @@ const Navbar = () => {
       router.asPath === '/netflix' ||
       router.asPath === '/twitch'
     ) {
-      setNavBg('transparent');
-      setLinkColor('#ecf0f3');
+      setNavBg('white');
+      setLinkColor('black');
     } else {
-      setNavBg('#ecf0f3');
-      setLinkColor('#1f2937');
+      setNavBg('slate');
+      setLinkColor('grey');
     }
   }, [router]);
 
@@ -53,38 +56,31 @@ const Navbar = () => {
       }
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-        {/* <Link href='/'>
-          <Image
-            src='/../public/assets/navLogo.png'
-            alt='/'
-            width='125'
-            height='50'
-          />
-        </Link> */}
+        
          <div> 
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
             <Link href='/'>
-              <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
+              <li className='ml-10 text-md uppercase  hover:text-indigo-600 font-semibold'>Home</li>
             </Link>
             <Link href='/#about'>
-              <li className='ml-10 text-sm uppercase hover:border-b'>About</li>
+              <li className='ml-10 text-md uppercase hover:text-indigo-600 font-semibold'>About</li>
             </Link>
             <Link href='/#skills'>
-              <li className='ml-10 text-sm uppercase hover:border-b'>Skills</li>
+              <li className='ml-10 text-md uppercase hover:text-indigo-600 font-semibold'>Skills</li>
             </Link>
             <Link href='/#projects'>
-              <li className='ml-10 text-sm uppercase hover:border-b'>
+              <li className='ml-10 text-md uppercase hover:text-indigo-600 font-semibold'>
                 Projects
               </li>
             </Link>
             <Link href='/#contact'>
-              <li className='ml-10 text-sm uppercase hover:border-b'>
+              <li className='ml-10 text-md uppercase hover:text-indigo-600 font-semibold'>
                 Contact
               </li>
             </Link>
           </ul>
           <div onClick={handleNav} className='md:hidden'>
-            <AiOutlineMenu size={25} />
+            <AiOutlineMenu size={30} />
           </div>
         </div>
       </div>
@@ -102,27 +98,16 @@ const Navbar = () => {
           }
         >
           <div>
-            <div className='flex w-full items-center justify-between'>
-              <Link href='/'>
-                <Image
-                  src='/../public/assets/navLogo.png'
-                  width='87'
-                  height='35'
-                  alt='/'
-                />
-              </Link>
+            <div className='flex w-full items-center justify-end'>
+              
               <div
                 onClick={handleNav}
-                className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
+                className="p-3 cursor-pointer"
               >
                 <AiOutlineClose />
               </div>
             </div>
-            <div className='border-b border-gray-300 my-4'>
-              <p className='w-[85%] md:w-[90%] py-4'>
-                Let's build something legendary together
-              </p>
-            </div>
+           
           </div>
           <div className='py-4 flex flex-col'>
             <ul className='uppercase'>
@@ -152,24 +137,27 @@ const Navbar = () => {
                 </li>
               </Link>
             </ul>
-            <div className='pt-40'>
-              <p className='uppercase tracking-widest text-[#5651e5]'>
-                Let's Connect
-              </p>
-              <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <FaLinkedinIn />
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <FaGithub />
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <AiOutlineMail />
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <BsFillPersonLinesFill />
-                </div>
-              </div>
+            <div className='flex py-20'>
+
+            <div className='mx-3'>
+
+              <Link href={"https://www.linkedin.com/in/varisha-rashid-5a8848198/"}><img src="https://img.icons8.com/color/48/000000/linkedin.png" style={{"height": "30px", "width": "35px","cursor":"pointer"}}/></Link>
+            </div>
+            <div className='mx-3'>
+              <Link href={"https://github.com/varisha-025"}><FaGithub style={{ "height": "30px", "width": "35px" ,"cursor":"pointer" }} /></Link>
+            </div>
+            <div className='mx-3'>
+              <Link href={"https://leetcode.com/varisha25/"}><SiLeetcode style={{ "height": "30px", "width": "35px","cursor":"pointer"  }} /></Link>
+
+            </div>
+
+            <div className='mx-3'>
+              <Link href={"mailto:varisharashid01@gmail.com"}><img src="https://img.icons8.com/color/48/000000/gmail-new.png" style={{"height": "30px", "width": "35px","cursor":"pointer"}}/></Link>
+            </div>
+            <div className='mx-3'>
+              <Link href={"https://stackoverflow.com/users/15527533/varisha15"}><img src="https://img.icons8.com/color/48/000000/stackoverflow.png" style={{"height": "30px", "width": "35px","cursor":"pointer"}}/></Link>
+            </div>
+        
             </div>
           </div>
         </div>

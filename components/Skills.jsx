@@ -9,7 +9,7 @@ const Skills = () => {
         <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
           Skills
         </p>
-        <h2 className='py-4'>What I Can Do</h2>
+        <h2 className='py-4 my-4'>What I Can Do</h2>
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
         <SkillItem src="/../public/assets/skills/react.png" name="React.js" />
           <SkillItem src="/../public/assets/skills/nextjs.png" name="Next.js" />
