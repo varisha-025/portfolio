@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { SiLeetcode } from 'react-icons/si';
 
 const Main = () => {
   return (
@@ -22,19 +22,26 @@ const Main = () => {
             I’m focused on building responsive full stack web applications while
             learning other technologies as blockchain.
           </p>
-          <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                    <Link href="https://www.linkedin.com/in/varisha-rashid-5a8848198/"><FaLinkedinIn /></Link>
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                    <Link href="https://github.com/varisha-025"><FaGithub /></Link>
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                    <Link href="mailto:varisharashid01@gmail.com"><AiOutlineMail /></Link>
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                    <Link href="#"><BsFillPersonLinesFill /></Link>
-                </div>
+          <div className='flex items-center justify-center py-12'>
+
+            <div className='mx-3'>
+
+              <Link href={"https://www.linkedin.com/in/varisha-rashid-5a8848198/"}><img src="https://img.icons8.com/color/48/000000/linkedin.png" style={{"cursor":"pointer"}}/></Link>
+            </div>
+            <div className='mx-3'>
+              <Link href={"https://github.com/varisha-025"}><FaGithub style={{ "height": "44px", "width": "50px" ,"cursor":"pointer" }} /></Link>
+            </div>
+            <div className='mx-3'>
+              <Link href={"https://leetcode.com/varisha25/"}><SiLeetcode style={{ "height": "44px", "width": "50px","cursor":"pointer"  }} /></Link>
+
+            </div>
+
+            <div className='mx-3'>
+              <Link href={"mailto:varisharashid01@gmail.com"}><img src="https://img.icons8.com/color/48/000000/gmail-new.png" style={{"cursor":"pointer"}}/></Link>
+            </div>
+            <div className='mx-3'>
+              <Link href={"https://stackoverflow.com/users/15527533/varisha15"}><img src="https://img.icons8.com/color/48/000000/stackoverflow.png" style={{"cursor":"pointer"}}/></Link>
+            </div>
           </div>
         </div>
       </div>

@@ -1,10 +1,13 @@
 import Image from 'next/image';
 import React from 'react';
-import cryptoImg from '../public/assets/projects/crypto.jpg';
+import dictionaryImg from '../public/assets/projects/dictionary.png'
+import kayaImg from '../public/assets/projects/kaya.png'
+import fakenewsImg from '../public/assets/projects/fakenews.png';
+
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
-const crypto = () => {
+const fakenews = () => {
   return (
     <div className='w-full'>
       <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
@@ -13,7 +16,7 @@ const crypto = () => {
           className='absolute z-1'
           layout='fill'
           objectFit='cover'
-          src={cryptoImg}
+          src={fakenewsImg}
           alt='/'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
@@ -24,9 +27,9 @@ const crypto = () => {
 
       <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
         <div className='col-span-4'>
-          <p>Project</p>
+          <p className='uppercase text-xl tracking-widest text-[#5651e5] py-4'>Project</p>
           <h2>Overview</h2>
-          <p>
+          <p className='py-3'>
             This app was built using React JS and is hosted on Firebase. Users
             are able to search properties based on an Address, City, or ZIP code
             to retrieve a list of active properties currently for sale. You will
@@ -72,4 +75,4 @@ const crypto = () => {
   );
 };
 
-export default crypto;
+export default fakenews;
