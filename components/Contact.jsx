@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-
+import Image from 'next/image';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 import { SiLeetcode } from 'react-icons/si';
@@ -19,7 +19,7 @@ const Contact = () => {
           <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
             <div className='lg:p-4 h-full '>
               <div>
-                {/* <img
+                {/* <Image
                   className='rounded-xl hover:scale-105 ease-in duration-300'
                   src='#'
                   alt='/'
@@ -29,7 +29,7 @@ const Contact = () => {
                 <h2 className='py-2 my-3'>Varisha Rashid</h2>
                 <p className='text-xl tracking-wide uppercase text-[#5651e5]'>Full-Stack Web Developer</p>
                 <p className='py-4 text-lg'>
-                  Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+                  Although I am not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I will try my best to get back to you!
                 </p>
               </div>
               <div>
@@ -37,7 +37,7 @@ const Contact = () => {
 
                   <div className='mr-4 ml-2'>
 
-                    <Link href={"https://www.linkedin.com/in/varisha-rashid-5a8848198/"}><img src="https://img.icons8.com/color/48/000000/linkedin.png" style={{ "cursor": "pointer" }} /></Link>
+                    {/* <Link href={"https://www.linkedin.com/in/varisha-rashid-5a8848198/"}><Image src="https://img.icons8.com/color/48/000000/linkedin.png" width={"44px"} height={"44px"} style={{ "cursor": "pointer" }} /></Link> */}
                     {/* <FontAwesomeIcon icon="fa-brands fa-linkedin-in" /> */}
                     {/* <i class="fa-brands fa-linkedin-in"></i> */}
                     
@@ -51,10 +51,10 @@ const Contact = () => {
                   </div>
 
                   <div className='mx-3'>
-                    <Link href={"mailto:varisharashid01@gmail.com"}><img src="https://img.icons8.com/color/48/000000/gmail-new.png" style={{ "cursor": "pointer" }} /></Link>
+                    {/* <Link href={"mailto:varisharashid01@gmail.com"}><Image src="https://img.icons8.com/color/48/000000/gmail-new.png" width={"44px"} height={"44px"} style={{ "cursor": "pointer" }} /></Link> */}
                   </div>
                   <div className='mx-3'>
-                    <Link href={"https://stackoverflow.com/users/15527533/varisha15"}><img src="https://img.icons8.com/color/48/000000/stackoverflow.png" style={{ "cursor": "pointer" }} /></Link>
+                    {/* <Link href={"https://stackoverflow.com/users/15527533/varisha15"}><Image src="https://img.icons8.com/color/48/000000/stackoverflow.png" width={"44px"} height={"44px"} style={{ "cursor": "pointer" }} /></Link> */}
                   </div>
                 </div>
               </div>
@@ -69,11 +69,11 @@ const Contact = () => {
             <div className="max-w-md mx-auto py-14">
               <div className="max-w-md mx-auto">
                 <div className="text-center mb-20">
-                  <h1 className=" text-4xl font-semibold text-gray-700 ">Let's Connect</h1>
+                  <h1 className=" text-4xl font-semibold text-gray-700 ">Lets Connect</h1>
                   <p className="py-5 text-gray-500 ">Send me a message</p>
                 </div>
                 <div className="m-7">
-                  <form action="mailto:varisharashid01@gmail.com" method="post" enctype="multipart/form-data"
+                  <form action="mailto:varisharashid01@gmail.com" method="post" encType="multipart/form-data"
                     name="EmailForm">
                     <div className="mb-6">
                       <label htmlFor="email" className="block mb-2 text-sm text-gray-600 ">Email Address</label>
