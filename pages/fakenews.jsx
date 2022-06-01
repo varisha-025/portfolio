@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import dictionaryImg from '../public/assets/projects/dictionary.png'
-import kayaImg from '../public/assets/projects/kaya.png'
+
 import fakenewsImg from '../public/assets/projects/fakenews.png';
 
 import { RiRadioButtonFill } from 'react-icons/ri';
@@ -21,7 +20,7 @@ const fakenews = () => {
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
           <h2 className='py-2'>Fake News Detector App</h2>
-          <h3>React JS / Tailwind / Firebase</h3>
+          <h3>Django/ Sklearn/ Heroku</h3>
         </div>
       </div>
 
@@ -30,39 +29,40 @@ const fakenews = () => {
           <p className='uppercase text-xl tracking-widest text-[#5651e5] py-4'>Project</p>
           <h2>Overview</h2>
           <p className='py-3'>
-            This app was built using React JS and is hosted on Firebase. Users
+            {/* This app was built using React JS and is hosted on Firebase. Users
             are able to search properties based on an Address, City, or ZIP code
             to retrieve a list of active properties currently for sale. You will
             be able to view property information as well as the specific
             location of the property integrated with the Google Maps API. User
             authentication is available so you can signup & signin to your
             account with an email address in order to save your favorite
-            properties. This is made possible with Zillow API.
+            properties. This is made possible with Zillow API. */}
+            An ML model that predicts whether the given news headline or news URL is fake or not.
           </p>
-          <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
-          <button className='px-8 py-2 mt-4'>Code</button>
+          <Link href={"https://newsdetectionapp.herokuapp.com/"}><button className='px-8 py-2 mt-4 mr-8'>Demo</button></Link>
+          <Link href={"https://github.com/varisha-025/fake-news-app"}><button className='px-8 py-2 mt-4'>Code</button></Link>
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
           <div className='p-2'>
             <p className='text-center font-bold pb-2'>Technologies</p>
             <div className='grid grid-cols-3 md:grid-cols-1'>
               <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> React
+                <RiRadioButtonFill className='pr-1' /> Django
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Tailwind
+                <RiRadioButtonFill className='pr-1' /> Sklearn
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
                 <RiRadioButtonFill className='pr-1' /> Javascript
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Firebase
+                <RiRadioButtonFill className='pr-1' /> Heroku
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Google API
+                <RiRadioButtonFill className='pr-1' /> CSS
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Zillow API
+                <RiRadioButtonFill className='pr-1' /> News API
               </p>
             </div>
           </div>

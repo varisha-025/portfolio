@@ -26,8 +26,8 @@ const Navbar = () => {
       setNavBg('white');
       setLinkColor('black');
     } else {
-      setNavBg('slate');
-      setLinkColor('grey');
+      setNavBg('#2A2A2A');
+      setLinkColor('#ecf0f3');
     }
   }, [router]);
 
@@ -55,7 +55,7 @@ const Navbar = () => {
           : 'fixed w-full h-20 z-[100]'
       }
     >
-      <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
+      <div className='flex justify-end items-center w-full h-full px-14 2xl:px-16'>
         
          <div> 
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
@@ -79,7 +79,7 @@ const Navbar = () => {
               </li>
             </Link>
           </ul>
-          <div onClick={handleNav} className='md:hidden'>
+          <div onClick={handleNav} className='md:hidden text-white'>
             <AiOutlineMenu size={30} />
           </div>
         </div>
@@ -87,14 +87,14 @@ const Navbar = () => {
       
       <div
         className={
-          nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''
+          nav ? 'md:hidden fixed right-0 top-0 w-full h-screen bg-white/70' : ''
         }
       >
         <div
           className={
             nav
-              ? ' fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
-              : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
+              ? ' fixed right-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
+              : 'fixed right-[-100%] top-0 p-10 ease-in duration-500'
           }
         >
           <div>
