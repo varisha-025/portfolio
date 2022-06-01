@@ -139,9 +139,9 @@ const Navbar = () => {
             </ul>
             <div className='flex py-20'>
 
-            <div className='mx-3'>
+            {/* <div className='mx-3'> */}
 
-              <Link href={"https://www.linkedin.com/in/varisha-rashid-5a8848198/"}><img src="https://img.icons8.com/color/48/000000/linkedin.png" style={{"height": "30px", "width": "35px","cursor":"pointer"}}/></Link>
+              {/* <Link href={"https://www.linkedin.com/in/varisha-rashid-5a8848198/"}><img src="https://img.icons8.com/color/48/000000/linkedin.png" style={{"height": "30px", "width": "35px","cursor":"pointer"}}/></Link>
             </div>
             <div className='mx-3'>
               <Link href={"https://github.com/varisha-025"}><FaGithub style={{ "height": "30px", "width": "35px" ,"cursor":"pointer" }} /></Link>
@@ -156,7 +156,7 @@ const Navbar = () => {
             </div>
             <div className='mx-3'>
               <Link href={"https://stackoverflow.com/users/15527533/varisha15"}><img src="https://img.icons8.com/color/48/000000/stackoverflow.png" style={{"height": "30px", "width": "35px","cursor":"pointer"}}/></Link>
-            </div>
+            </div> */}
         
             </div>
           </div>
