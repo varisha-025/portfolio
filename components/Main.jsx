@@ -9,7 +9,7 @@ import Image from 'next/image';
 
 const Main = () => {
   return (
-    <div id='home' className='w-full h-screen text-center py-10'>
+    <div id='home' className='w-screen h-screen text-center pt-28'>
       <div className='max-w-[1240px] w-full h-full mx-auto py-2 flex justify-center items-center'>
         <div className='py-14'>
           <p className='uppercase text-sm tracking-widest pt-32 text-gray-600 '>
