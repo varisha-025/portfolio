@@ -71,7 +71,7 @@ const Contact = () => {
             <div className="max-w-md mx-auto py-14">
               <div className="max-w-md mx-auto">
                 <div className="text-center mb-20">
-                  <h1 className=" text-4xl font-semibold text-gray-700 ">Lets Connect</h1>
+                  <h1 className=" text-4xl font-semibold text-gray-700 ">Let&apos;s Connect</h1>
                   <p className="py-5 text-gray-500 ">Send me a message</p>
                 </div>
                 <div className="m-7">
