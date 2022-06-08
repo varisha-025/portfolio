@@ -15,6 +15,7 @@ import jsIcon from '../public/assets/skills/javascript.png'
 import tailwindIcon from '../public/assets/skills/tailwind.png'
 
 
+
 const Skills = () => {
   return (
     <div id='skills' className='w-full lg:h-screen p-2'>
