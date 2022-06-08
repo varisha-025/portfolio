@@ -14,7 +14,7 @@ const SkillItem = ({src,name}) => {
                   alt='/'
                 />
               </div>
-              <div className='flex flex-col items-center justify-center'>
+              <div className='flex flex-col items-center justify-center text-lg'>
                 <h3>{name}</h3>
               </div>
             </div>

@@ -3,13 +3,13 @@ import React from 'react';
 import linkedinIcon from '../public/assets/linkedin.png'
 import gmailIcon from '../public/assets/gmail.png'
 import stackoverflowIcon from '../public/assets/stackoverflow.png'
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub} from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
 import Image from 'next/image';
 
 const Main = () => {
   return (
-    <div id='home' className='w-screen h-screen text-center pt-28'>
+    <div id='home' className='w-screen h-screen text-center pt-28 mb-12'>
       <div className='max-w-[1240px] w-full h-full mx-auto py-2 flex justify-center items-center'>
         <div className='py-14'>
           <p className='uppercase text-sm tracking-widest pt-32 text-gray-600 '>

@@ -6,13 +6,13 @@ import styles from "../styles/Button.module.css"
 
 const About = () => {
   return (
-    <div id='about' className='w-screen md:h-screen p-2 flex items-center py-10 px-8'>
+    <div id='about' className='w-screen md:h-screen flex items-center py-20 mx-3 px-8'>
       <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
         <div className='col-span-2'>
           <p className='uppercase text-xl tracking-widest text-[#5651e5] '>About</p>
           <h2 className='py-4'>Who I Am</h2>
 
-          <p className='py-2 text-gray-600 text-xl'>
+          <p className='py-6 text-gray-600 text-xl'>
             Hello! My name is Varisha and I enjoy creating things that live on the internet. My interest in web development started back in 2020 and since then it has been my favourite. I have always been someone who has both a creative and a logical side.
           </p>
           <p className='py-2 text-gray-600 text-xl'>

@@ -12,11 +12,11 @@ import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
 const Contact = () => {
   return (
     <div id='contact' className='w-full lg:h-screen'>
-      <div className='max-w-[1240px] m-auto sm:px-2 w-full '>
+      <div className='max-w-[1240px] m-auto px-6 w-full '>
         <p className='text-xl tracking-widest uppercase text-[#5651e5] px-7'>
           Contact
         </p>
-        <h2 className='py-4 px-7'>Get In Touch </h2>
+        <h2 className='py-4 px-6'>Get In Touch </h2>
         <div className='grid md:grid-cols-5 gap-6 my-2'>
           {/* left */}
           <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl pt-8'>
@@ -25,7 +25,7 @@ const Contact = () => {
               <div className=''>
                 <h2 className='py-2 my-3 text-center'>Varisha Rashid</h2>
                 <p className='text-xl tracking-wide uppercase text-[#5651e5] text-center'>Full-Stack Web Developer</p>
-                <p className='py-4 mx-4 ml-6 text-lg'>
+                <p className='py-4 mx-4 ml-6 text-lg text-center'>
                   Although I&apos;m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I will try my best to get back to you!
                 </p>
               </div>
@@ -58,7 +58,7 @@ const Contact = () => {
 
             <div className="max-w-md mx-auto py-14">
               <div className="max-w-md mx-auto">
-                <div className="text-center mb-20">
+                <div className="text-center mb-14">
                   <h1 className="text-4xl font-semibold text-gray-700 ">Let&apos;s Connect</h1>
                   <p className="py-5 text-gray-500 ">Send me a message</p>
                 </div>
