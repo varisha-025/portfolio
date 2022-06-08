@@ -31,21 +31,15 @@ const Contact = () => {
               </div>
               <div>
                 <div className='flex pt-32 mx-2 pb-6 text-center items-center justify-center'>
-
                   <div className='mr-4 ml-2'>
-
                     <Link href={"https://www.linkedin.com/in/varisha-rashid-5a8848198/"}><Image src={linkedinIcon} width={"44px"} height={"44px"} style={{ "cursor": "pointer" }} /></Link>
-
-
                   </div>
                   <div className='mx-2'>
                     <Link href={"https://github.com/varisha-025"}><FaGithub style={{ "height": "44px", "width": "50px", "cursor": "pointer" }} /></Link>
                   </div>
                   <div className='mx-3'>
                     <Link href={"https://leetcode.com/varisha25/"}><SiLeetcode style={{ "height": "44px", "width": "50px", "cursor": "pointer" }} /></Link>
-
                   </div>
-
                   <div className='mx-3'>
                     <Link href={"mailto:varisharashid01@gmail.com"}><Image src={gmailIcon} width={"44px"} height={"44px"} style={{ "cursor": "pointer" }} /></Link>
                   </div>
@@ -103,7 +97,7 @@ const Contact = () => {
         </div>
 
       </div>
-    // </div>
+    </div>
   );
 };
 

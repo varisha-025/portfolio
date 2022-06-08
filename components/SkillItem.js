@@ -9,8 +9,8 @@ const SkillItem = ({src,name}) => {
               <div className='m-auto'>
                 <Image
                   src={src}
-                  width='70px'
-                  height='69px'
+                  width='76px'
+                  height='70px'
                   alt='/'
                 />
               </div>

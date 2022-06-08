@@ -1,10 +1,7 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 import fakenewsImg from '../public/assets/projects/fakenews.png';
 import dictionaryImg from '../public/assets/projects/dictionary.jpeg'
 import kayaImg from '../public/assets/projects/kaya.jpeg'
-// import twitchImg from '../public/assets/projects/twitch.jpg'
 import ProjectItem from './ProjectItem';
 
 const Projects = () => {

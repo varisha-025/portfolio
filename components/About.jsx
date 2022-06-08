@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import myImg from '../public/assets/projects/mypic.jpg';
 import styles from "../styles/Button.module.css"
+
 const About = () => {
   return (
     <div id='about' className='w-screen md:h-screen p-2 flex items-center py-10 px-8'>

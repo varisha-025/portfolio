@@ -1,7 +1,19 @@
-import Image from 'next/image';
 import React from 'react';
 import SkillItem from './SkillItem';
 import reactIcon from '../public/assets/skills/react.png'
+import nextjsIcon from '../public/assets/skills/nextjs.png'
+import expressjsIcon from '../public/assets/skills/expressjs.jpeg'
+import nodejsIcon from '../public/assets/skills/node-js.png'
+import djangoIcon from '../public/assets/skills/django.png'
+import mongodbIcon from '../public/assets/skills/mongodb.png'
+import githubIcon from '../public/assets/skills/github.png'
+import htmlIcon from '../public/assets/skills/html.png'
+import jqueryIcon from '../public/assets/skills/jquery.png'
+import mysqlIcon from '../public/assets/skills/mysql.png'
+import drfIcon from '../public/assets/skills/drf.png'
+import jsIcon from '../public/assets/skills/javascript.png'
+import tailwindIcon from '../public/assets/skills/tailwind.png'
+
 
 const Skills = () => {
   return (
@@ -13,20 +25,18 @@ const Skills = () => {
         <h2 className='py-4 px-6'>What I Can Do</h2>
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
           <SkillItem src={reactIcon} name="React.js" />
-          <SkillItem src="/../public/assets/skills/nextjs.png" name="Next.js" />
-          <SkillItem src="/../public/assets/skills/expressjs.jpeg" name="Express.js" />
-          <SkillItem src="/../public/assets/skills/node-js.png" name="Node.js" />
-
-          <SkillItem src="/../public/assets/skills/django.png" name="Django" />
-          <SkillItem src="/../public/assets/skills/mongodb.png" name="MongoDB" />
-          <SkillItem src="/../public/assets/skills/mysql.png" name="MySQL" />
-          <SkillItem src="/../public/assets/skills/jquery.gif" name="JQuery" />
-
-          <SkillItem src="/../public/assets/skills/github.png" name="Github" />
-
-          <SkillItem src="/../public/assets/skills/javascript.png" name="JavaScript" />
-          <SkillItem src="/../public/assets/skills/html.png" name="HTML" />
-          <SkillItem src="/../public/assets/skills/css.png" name="CSS" />
+          <SkillItem src={nextjsIcon} name="Next.js" />
+          <SkillItem src={expressjsIcon} name="Express.js" />
+          <SkillItem src={nodejsIcon} name="Node.js" />
+          <SkillItem src={drfIcon} name="Django REST framework" />
+          <SkillItem src={djangoIcon} name="Django" />
+          <SkillItem src={mongodbIcon} name="MongoDB" />
+          <SkillItem src={mysqlIcon} name="MySQL" />
+          <SkillItem src={jqueryIcon} name="JQuery" />
+          <SkillItem src={githubIcon} name="Github" />
+          <SkillItem src={jsIcon} name="JavaScript" />
+          <SkillItem src={htmlIcon} name="HTML" />
+          <SkillItem src={tailwindIcon} name="Tailwind CSS" />
 
         </div>
       </div>
