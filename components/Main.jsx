@@ -18,7 +18,7 @@ const Main = () => {
           </h1>
           <h1 className='py-2 text-gray-700'>A Full Stack Web Developer</h1>
           <p className='py-4 text-gray-600 max-w-[70%] m-auto text-lg'>
-            I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time, I like working on open source projects.
+            I&apos;m most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time, I like working on open source projects.
           </p>
           <div className='flex items-center justify-center py-12'>
 

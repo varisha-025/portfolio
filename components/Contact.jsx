@@ -26,7 +26,7 @@ const Contact = () => {
                 <h2 className='py-2 my-3 text-center'>Varisha Rashid</h2>
                 <p className='text-xl tracking-wide text-[#5651e5] text-center'>Full-Stack Web Developer</p>
                 <p className='py-4 mx-4 ml-6 text-lg text-center'>
-                I'm currently looking for full-time Web Development(preferably backend) internship opportunities! If you know of any positions available, please feel free to leave me a message.
+                I&apos;m currently looking for full-time Web Development(preferably backend) internship opportunities! If you know of any positions available, please feel free to leave me a message.
                 </p>
               </div>
               <div>
