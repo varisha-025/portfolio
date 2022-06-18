@@ -2,50 +2,55 @@ import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import linkedinIcon from '../public/assets/linkedin.png'
-import gmailIcon from '../public/assets/gmail.png'
-import stackoverflowIcon from '../public/assets/stackoverflow.png'
+
+import gmailIcon from '../public/assets/mail.png'
+
 import { SiLeetcode } from 'react-icons/si';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
 // import styles from "../styles/Icons.module.css"
 
 const Contact = () => {
   return (
-    <div id='contact' className='w-full lg:h-screen'>
+    <div id='contact' className='w-full lg:h-screen pt-20'>
       <div className='max-w-[1240px] m-auto px-6 w-full '>
         <p className='text-xl tracking-widest uppercase text-[#5651e5] px-7'>
           Contact
         </p>
         <h2 className='py-4 px-6'>Get In Touch </h2>
-        <div className='grid md:grid-cols-5 gap-6 my-2'>
+        <div className='grid md:grid-cols-5 gap-6 my-2 py-4'>
           {/* left */}
           <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl pt-8'>
              <div className='lg:p-4 h-full '> 
               
               <div className=''>
                 <h2 className='py-2 my-3 text-center'>Varisha Rashid</h2>
-                <p className='text-xl tracking-wide uppercase text-[#5651e5] text-center'>Full-Stack Web Developer</p>
+                <p className='text-xl tracking-wide text-[#5651e5] text-center'>Full-Stack Web Developer</p>
                 <p className='py-4 mx-4 ml-6 text-lg text-center'>
-                  Although I&apos;m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I will try my best to get back to you!
+                I'm currently looking for full-time Web Development(preferably backend) internship opportunities! If you know of any positions available, please feel free to leave me a message.
                 </p>
               </div>
               <div>
-                <div className='flex pt-32 mx-2 pb-6 text-center items-center justify-center'>
-                  <div className='mr-4 ml-2'>
-                    <Link href={"https://www.linkedin.com/in/varisha-rashid-5a8848198/"}><Image src={linkedinIcon} width={"44px"} height={"44px"} style={{ "cursor": "pointer" }} /></Link>
-                  </div>
-                  <div className='mx-2'>
-                    <Link href={"https://github.com/varisha-025"}><FaGithub style={{ "height": "44px", "width": "50px", "cursor": "pointer" }} /></Link>
-                  </div>
-                  <div className='mx-3'>
-                    <Link href={"https://leetcode.com/varisha25/"}><SiLeetcode style={{ "height": "44px", "width": "50px", "cursor": "pointer" }} /></Link>
-                  </div>
-                  <div className='mx-3'>
-                    <Link href={"mailto:varisharashid01@gmail.com"}><Image src={gmailIcon} width={"44px"} height={"44px"} style={{ "cursor": "pointer" }} /></Link>
-                  </div>
-                  <div className='mx-3'>
-                    <Link href={"https://stackoverflow.com/users/15527533/varisha15"}><Image src={stackoverflowIcon} width={"44px"} height={"44px"} style={{ "cursor": "pointer" }} /></Link>
-                  </div>
+                <div className='flex pt-36 mx-2 pb-10 text-center items-center justify-center'>
+                <div className='mx-3'>
+            <Link href={"https://www.linkedin.com/in/varisha-rashid-5a8848198/"}><i className="fa fa-linkedin fa-2x" style={{ "cursor": "pointer" }}></i></Link>
+            </div>
+            
+            <div className='mx-3'>
+              <Link href={"https://github.com/varisha-025"}><FaGithub style={{ "height": "38px", "width": "44px", "cursor": "pointer" }} /></Link>
+              
+            </div>
+            <div className='mx-3'>
+              <Link href={"https://leetcode.com/varisha25/"}><SiLeetcode style={{ "height": "39px", "width": "46px", "cursor": "pointer" }} /></Link>
+
+            </div>
+
+            <div className='mx-3 pt-2'>
+              <Link href={"mailto:varisharashid01@gmail.com"}><Image src={gmailIcon} style={{ "height": "44px", "width": "50px", "cursor": "pointer" }} /></Link>
+             
+            </div>
+            <div className='mx-3'>
+              <Link href="https://stackoverflow.com/users/15527533/varisha15" ><i className="fa fa-stack-overflow fa-2x" style={{"cursor": "pointer" }}></i></Link>
+            </div>
                 </div>
               </div>
 
@@ -60,10 +65,10 @@ const Contact = () => {
               <div className="max-w-md mx-auto">
                 <div className="text-center mb-14">
                   <h1 className="text-4xl font-semibold text-gray-700 ">Let&apos;s Connect</h1>
-                  <p className="py-5 text-gray-500 ">Send me a message</p>
+                  <p className="py-4 text-gray-500 ">Send me a message</p>
                 </div>
                 <div className="m-7">
-                  <form action="mailto:varisharashid01@gmail.com" method="post" encType="multipart/form-data"
+                  <form action="mailto:varisharashid01@gmail.com" method="POSTˀ" encType="text/plain"
                     name="EmailForm">
                     <div className="mb-6">
                       <label htmlFor="email" className="block mb-2 text-sm text-gray-600 ">Email Address</label>
@@ -77,7 +82,6 @@ const Contact = () => {
                       <textarea type="message" name="message" id="message" placeholder="Your message" className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-300 focus:border-indigo-500  dark:text-white dark:placeholder-gray-500 dark:border-gray-600  dark:focus:border-gray-500" />
                     </div>
                     <div className="mb-6 flex justify-center ">
-
                       <button className="w-24 px-2 py-3 focus:ring-2 ring-indigo-600 bg-indigo-200">Send</button>
                     </div>
 

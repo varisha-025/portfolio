@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { FaGithub } from 'react-icons/fa';
+import gmailIcon from '../public/assets/mail.png'
 import { useRouter } from 'next/router';
 import { SiLeetcode } from 'react-icons/si';
 
@@ -18,10 +18,9 @@ const Navbar = () => {
 
   useEffect(() => {
     if (
-      router.asPath === '/property' ||
-      router.asPath === '/crypto' ||
-      router.asPath === '/netflix' ||
-      router.asPath === '/twitch'
+      router.asPath === '/kaya' ||
+      router.asPath === '/fakenews' ||
+      router.asPath === '/dictionary'
     ) {
       setNavBg('white');
       setLinkColor('black');
@@ -53,14 +52,16 @@ const Navbar = () => {
         shadow
           ? 'fixed w-full h-20 shadow-xl z-[100]'
           : 'fixed w-full h-20 z-[100]'
-      }
-    >
-      <div className='flex justify-end items-center w-full h-full px-14 2xl:px-16'>
-        
-         <div> 
+      }>
+    
+        <div className='flex items-center justify-end w-full h-full px-14 2xl:px-16'>
+
+     
+         <div > 
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
+          
             <Link href='/'>
-              <li className='ml-10 text-md uppercase  hover:text-indigo-600 font-semibold'>Home</li>
+              <li className='ml-10 text-md uppercase hover:text-indigo-600 font-semibold'>Home</li>
             </Link>
             <Link href='/#about'>
               <li className='ml-10 text-md uppercase hover:text-indigo-600 font-semibold'>About</li>
@@ -83,7 +84,7 @@ const Navbar = () => {
             <AiOutlineMenu size={30} />
           </div>
         </div>
-      </div>
+
       
       <div
         className={
@@ -139,29 +140,27 @@ const Navbar = () => {
             </ul>
             <div className='flex py-20'>
 
-            {/* <div className='mx-3'> */}
+            <div className='mx-3'>
+            <Link href={"https://www.linkedin.com/in/varisha-rashid-5a8848198/"}><i className="fa fa-linkedin fa-2x" style={{ "cursor": "pointer" }}></i></Link>
+            </div>
+            
+            <div className='mx-3'>
+              <Link href={"https://github.com/varisha-025"}><FaGithub style={{ "height": "38px", "width": "44px", "cursor": "pointer" }} /></Link>
+              
+            </div>
+            <div className='mx-3'>
+              <Link href={"https://leetcode.com/varisha25/"}><SiLeetcode style={{ "height": "39px", "width": "46px", "cursor": "pointer" }} /></Link>
 
-              {/* <Link href={"https://www.linkedin.com/in/varisha-rashid-5a8848198/"}><img src="https://img.icons8.com/color/48/000000/linkedin.png" style={{"height": "30px", "width": "35px","cursor":"pointer"}}/></Link>
-            </div>
-            <div className='mx-3'>
-              <Link href={"https://github.com/varisha-025"}><FaGithub style={{ "height": "30px", "width": "35px" ,"cursor":"pointer" }} /></Link>
-            </div>
-            <div className='mx-3'>
-              <Link href={"https://leetcode.com/varisha25/"}><SiLeetcode style={{ "height": "30px", "width": "35px","cursor":"pointer"  }} /></Link>
-
             </div>
 
             <div className='mx-3'>
-              <Link href={"mailto:varisharashid01@gmail.com"}><img src="https://img.icons8.com/color/48/000000/gmail-new.png" style={{"height": "30px", "width": "35px","cursor":"pointer"}}/></Link>
+              <Link href="https://stackoverflow.com/users/15527533/varisha15" ><i className="fa fa-stack-overflow fa-2x" style={{"cursor": "pointer" }}></i></Link>
             </div>
-            <div className='mx-3'>
-              <Link href={"https://stackoverflow.com/users/15527533/varisha15"}><img src="https://img.icons8.com/color/48/000000/stackoverflow.png" style={{"height": "30px", "width": "35px","cursor":"pointer"}}/></Link>
-            </div> */}
-        
             </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   
   );

@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import dictionaryImg from '../public/assets/projects/dictionary.jpeg'
 import kayaImg from '../public/assets/projects/kaya.jpeg'
 
 import { RiRadioButtonFill } from 'react-icons/ri';
@@ -19,8 +18,8 @@ const fakenews = () => {
           alt='/'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h2 className='py-2'>Product Landing Page</h2>
-          <h3>Javascript/ HTML/ CSS</h3>
+          <h2 className='py-2'>Kaya Product Landing Page</h2>
+          <h3>Javascript/ CSS/ Netlify</h3>
         </div>
       </div>
 
@@ -29,10 +28,13 @@ const fakenews = () => {
           <p className='uppercase text-xl tracking-widest text-[#5651e5] py-4'>Project</p>
           <h2>Overview</h2>
           <p className='py-3'>
-          The product landing page of Kaya Product enhancing its features and showing its superiority over other hands free speakers.
+          The product landing page of Kaya Product showcases its features and its superiority over other hands free speakers. It was the Africa's first hands-free speaker which gained popularity quickly.
           </p>
-          <Link href={"https://varisha-025.github.io/kaya_product/"}><button className='px-8 py-2 mt-4 mr-8'>Demo</button></Link>
-          <Link href={"https://github.com/varisha-025/kaya_product"}><button className='px-8 py-2 mt-4'>Code</button></Link>
+          <p className='py-3'>
+          It was built by me under the basic track of Hack the Web Hackathon, organised by The Programming Club(TPC), at IIITDM Jabalpur and it won the first prize.
+          </p>
+          <Link href={"https://kayalandingpage.netlify.app/"}><button className='px-5 py-2 mt-4 mr-8'>Demo</button></Link>
+          <Link href={"https://github.com/varisha-025/kaya_product"}><button className='px-5 py-2 mt-4'>Code</button></Link>
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
           <div className='p-2'>
@@ -53,13 +55,16 @@ const fakenews = () => {
               <p className='text-gray-600 py-2 flex items-center'>
                 <RiRadioButtonFill className='pr-1' /> AOS library
               </p>
+              <p className='text-gray-600 py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> Netlify
+              </p>
               
             </div>
           </div>
         </div>
-        <Link href='/#projects'>
-          <p className='underline cursor-pointer'>Back</p>
-        </Link>
+        <div className='pb-10'>
+        <Link href='/#projects'><span className=' underline cursor-pointer '>Go Back</span></Link>
+        </div>
       </div>
     </div>
   );

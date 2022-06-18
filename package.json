@@ -18,6 +18,7 @@
     "headlessui": "^0.0.0",
     "heroicons": "^1.0.6",
     "next": "12.1.6",
+    "nodemailer": "^6.7.5",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-icons": "^4.3.1"
@@ -28,5 +29,18 @@
     "eslint-config-next": "12.1.6",
     "postcss": "^8.4.13",
     "tailwindcss": "^3.0.24"
-  }
+  },
+  "description": "",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varisha-025/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/varisha-025/portfolio/issues"
+  },
+  "homepage": "https://github.com/varisha-025/portfolio#readme"
 }
