@@ -28,10 +28,10 @@ const fakenews = () => {
           <p className='uppercase text-xl tracking-widest text-[#5651e5] py-4'>Project</p>
           <h2>Overview</h2>
           <p className='py-3'>
-          The product landing page of Kaya Product showcases its features and its superiority over other hands free speakers. It was the Africa's first hands-free speaker which gained popularity quickly.
+          The product landing page of Kaya Product showcases its features and its superiority over other hands free speakers. It was the Africa&apos;s first hands-free speaker which gained popularity quickly.
           </p>
           <p className='py-3'>
-          It was built by me under the basic track of Hack the Web Hackathon, organised by The Programming Club(TPC), at IIITDM Jabalpur and it won the first prize.
+          It was build by me under the basic track of Hack the Web Hackathon, organised by The Programming Club(TPC), at IIITDM Jabalpur and it won the first prize.
           </p>
           <Link href={"https://kayalandingpage.netlify.app/"}><button className='px-5 py-2 mt-4 mr-8'>Demo</button></Link>
           <Link href={"https://github.com/varisha-025/kaya_product"}><button className='px-5 py-2 mt-4'>Code</button></Link>

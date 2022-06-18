@@ -33,7 +33,7 @@ const fakenews = () => {
           This website is an ML model created using Sklearn and NLP, integrated with Django, hosted on Heroku. It predicts whether the given news headline or news URL is fake or not. The dataset we used is the one available in kaggle with some Asian news web scraped from the internet using the trafilatura library.
           </p>
           <p className='py-3'>
-          It was a group project build under an event , Dev Drive, organised by The Programming Club(TPC), at IIITDM Jabalpur.
+          It was a group project build under an event, Dev Drive, organised by The Programming Club(TPC), at IIITDM Jabalpur.
           </p>
           <Link href={"https://newsdetectionapp.herokuapp.com/"}><button className='px-5 py-2 mt-4 mr-8'>Demo</button></Link>
           <Link href={"https://github.com/varisha-025/fake-news-app"}><button className='px-5 py-2 mt-4'>Code</button></Link>
