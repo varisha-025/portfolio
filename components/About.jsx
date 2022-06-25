@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import myImg from '../public/assets/projects/mypic.jpg';
+import myImg from '../public/assets/projects/mypic.jpeg';
 
 
 const About = () => {
