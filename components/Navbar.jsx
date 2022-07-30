@@ -3,7 +3,8 @@ import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub } from 'react-icons/fa';
-import gmailIcon from '../public/assets/mail.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { useRouter } from 'next/router';
 import { SiLeetcode } from 'react-icons/si';
 
@@ -22,11 +23,11 @@ const Navbar = () => {
       router.asPath === '/fakenews' ||
       router.asPath === '/dictionary'
     ) {
-      setNavBg('white');
-      setLinkColor('black');
+      setNavBg('#292828');
+      setLinkColor('#B8C1EC');
     } else {
-      setNavBg('#2A2A2A');
-      setLinkColor('#ecf0f3');
+      setNavBg('#232946');
+      setLinkColor('#FFFFFE');
     }
   }, [router]);
 
@@ -61,21 +62,21 @@ const Navbar = () => {
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
           
             <Link href='/'>
-              <li className='ml-10 text-md uppercase hover:text-indigo-600 font-semibold'>Home</li>
+              <li className='ml-10 text-md uppercase hover:text-[#b8c1ec] font-semibold'>Home</li>
             </Link>
             <Link href='/#about'>
-              <li className='ml-10 text-md uppercase hover:text-indigo-600 font-semibold'>About</li>
+              <li className='ml-10 text-md uppercase hover:text-[#b8c1ec] font-semibold'>About</li>
             </Link>
             <Link href='/#skills'>
-              <li className='ml-10 text-md uppercase hover:text-indigo-600 font-semibold'>Skills</li>
+              <li className='ml-10 text-md uppercase hover:text-[#b8c1ec] font-semibold'>Skills</li>
             </Link>
             <Link href='/#projects'>
-              <li className='ml-10 text-md uppercase hover:text-indigo-600 font-semibold'>
+              <li className='ml-10 text-md uppercase hover:text-[#b8c1ec] font-semibold'>
                 Projects
               </li>
             </Link>
             <Link href='/#contact'>
-              <li className='ml-10 text-md uppercase hover:text-indigo-600 font-semibold'>
+              <li className='ml-10 text-md uppercase hover:text-[#b8c1ec] font-semibold'>
                 Contact
               </li>
             </Link>
@@ -88,13 +89,13 @@ const Navbar = () => {
       
       <div
         className={
-          nav ? 'md:hidden fixed right-0 top-0 w-full h-screen bg-white/70' : ''
+          nav ? 'md:hidden fixed right-0 top-0 w-full h-screen bg-[#eebbc3]/70' : ''
         }
       >
         <div
           className={
             nav
-              ? ' fixed right-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
+              ? ' fixed right-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#b8c1ec] p-10 ease-in duration-500'
               : 'fixed right-[-100%] top-0 p-10 ease-in duration-500'
           }
         >
@@ -113,32 +114,32 @@ const Navbar = () => {
           <div className='py-4 flex flex-col'>
             <ul className='uppercase'>
               <Link href='/'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                <li onClick={() => setNav(false)} className='py-4 text-[#232946] ml-4 text-sm'>
                   Home
                 </li>
               </Link>
               <Link href='/#about'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                <li onClick={() => setNav(false)} className='py-4 text-[#232946] ml-4 text-sm'>
                   About
                 </li>
               </Link>
               <Link href='/#skills'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                <li onClick={() => setNav(false)} className='py-4 text-[#232946] ml-4 text-sm'>
                   Skills
                 </li>
               </Link>
               <Link href='/#projects'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                <li onClick={() => setNav(false)} className='py-4 text-[#232946] ml-4 text-sm'>
                   Projects
                 </li>
               </Link>
               <Link href='/#contact'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                <li onClick={() => setNav(false)} className='py-4 text-[#232946] ml-4 text-sm'>
                   Contact
                 </li>
               </Link>
             </ul>
-            <div className='flex py-20'>
+            <div className='flex py-10 ml-4'>
 
             <div className='mx-3'>
             <Link href={"https://www.linkedin.com/in/varisha-rashid-5a8848198/"}><i className="fa fa-linkedin fa-2x" style={{ "cursor": "pointer" }}></i></Link>
@@ -150,6 +151,10 @@ const Navbar = () => {
             </div>
             <div className='mx-3'>
               <Link href={"https://leetcode.com/varisha25/"}><SiLeetcode style={{ "height": "39px", "width": "46px", "cursor": "pointer" }} /></Link>
+
+            </div>
+            <div className='mx-3'>
+            <Link href={"mailto:varisharashid01@gmail.com"}><FontAwesomeIcon icon={faEnvelope} style={{ "height": "37px", "width": "46px", "cursor": "pointer" }} /></Link>
 
             </div>
 

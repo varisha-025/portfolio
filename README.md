@@ -15,6 +15,8 @@ Demo Link - [Here](https://varishaportfolio.netlify.app/)
 
 - Next.js
 - React.js
+- Express.js
+- Node.js
 - Tailwind CSS
 - Netlify
 

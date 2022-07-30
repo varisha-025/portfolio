@@ -4,7 +4,7 @@ import React from 'react'
 
 const ProjectItem = ({title, backgroundImg, tech, projectUrl}) => {
   return (
-    <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-3 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]'>
+    <div className='relative flex items-center justify-center h-auto w-full shadow-gray-400 rounded-xl p-3 group hover:bg-gradient-to-r from-[#EEBBC3] to-[#b8c1ec]'>
     <Image className='rounded-xl group-hover:opacity-10' src={backgroundImg} alt='/' /> 
     <div className='hidden group-hover:block absolute top-[45%] left-[45%] translate-x-[-45%] translate-y-[-45%]'>
         <h3 className='text-2xl text-white tracking-wider text-center'>{title}</h3>
@@ -12,7 +12,7 @@ const ProjectItem = ({title, backgroundImg, tech, projectUrl}) => {
           <div className="py-3 text-center">
         <Link href={projectUrl} >
 
-            <a className='text-center rounded-md bg-white text-gray-700 font-bold py-2 px-2 text-md cursor-pointer'>More Info</a>
+            <a className='text-center rounded-md bg-white text-gray-700 font-bold py-3 px-3 text-md cursor-pointer'>More Info</a>
         </Link>
           </div>
     </div>
