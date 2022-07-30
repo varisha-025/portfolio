@@ -20,10 +20,10 @@ const Skills = () => {
   return (
     <div id='skills' className='w-full lg:h-screen p-2 pt-32'>
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
-        <p className='text-xl tracking-widest uppercase text-[#5651e5] px-6'>
+        <p className='text-xl tracking-widest uppercase text-[#EEBBC3] px-6'>
           Skills
         </p>
-        <h2 className='py-4 px-6'>What I Can Do</h2>
+        <h2 className='py-4 px-6 text-4xl md:text-3xl text-[#B8C1EC]'>What I Can Do</h2>
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8 py-6'>
           <SkillItem src={nextjsIcon} name="Next.js" />
           <SkillItem src={reactIcon} name="React.js" />

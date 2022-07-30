@@ -8,10 +8,10 @@ const Projects = () => {
   return (
     <div id='projects' className='w-full pt-32'>
       <div className='max-w-[1240px] mx-auto py-16'>
-        <p className='text-xl tracking-widest uppercase text-[#5651e5] px-6'>
+        <p className='text-xl tracking-widest uppercase text-[#EEBBC3] px-6'>
           Projects
         </p>
-        <h2 className='py-4 px-6'>What I&apos;ve Built</h2>
+        <h2 className='py-4 px-6 text-4xl text-[#B8C1EC] md:text-3xl'>What I&apos;ve Built</h2>
         <div className='grid md:grid-cols-2 gap-8 py-6'>
           <ProjectItem
             title='Fake News Detector'

@@ -6,7 +6,7 @@
 body{
   /* font-family: 'Roboto', 'Helvetica Neue', sans-serif; */
   font-family: 'Open Sans', sans-serif;
-
+  background: #232946;
 }
 
 p{
@@ -15,7 +15,10 @@ p{
 }
 html {
   scroll-behavior: smooth;
+  color: #FFFFFE;
 }
+
+
 
 @layer base {
   body {
@@ -36,10 +39,6 @@ html {
   
   li {
     @apply cursor-pointer
-  }
-  button{
-
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white
   }
 }
 
