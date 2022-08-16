@@ -18,7 +18,7 @@ const Main = () => {
           </p>
           <div className='flex items-center text-center justify-center '>
             <Link href={"#contact"} ><button className='my-11 py-3 mr-7 md:mr-6 px-4 cursor-pointer text-lg shadow-gray-400 rounded-xl uppercase hover:text-[#232946] bg-[#EEBBC3] text-white hover:scale-110 ease-in duration-300'>Contact Me</button></Link>
-            <Link href="https://drive.google.com/file/d/1kxrxgUoeyppEoOJinNrGgg4s-IQAAoWI/view?usp=sharing" ><button className='my-11 py-3 px-4 ml-7 hover:text-[#232946] md:ml-2 cursor-pointer text-lg shadow-gray-400 rounded-xl uppercase bg-[#EEBBC3] hover:scale-110 ease-in duration-300 text-white'>Resume</button></Link>
+            <Link href="https://drive.google.com/file/d/1Gnn8qmKCXTtXkVMl3XOrpEMfF9QBd7lB/view?usp=sharing" ><button className='my-11 py-3 px-4 ml-7 hover:text-[#232946] md:ml-2 cursor-pointer text-lg shadow-gray-400 rounded-xl uppercase bg-[#EEBBC3] hover:scale-110 ease-in duration-300 text-white'>Resume</button></Link>
           </div>
         </div>
       </div>

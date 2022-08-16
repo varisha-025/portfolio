@@ -11,7 +11,6 @@ const ProjectItem = ({title, backgroundImg, tech, projectUrl}) => {
         <p className='pb-4 pt-2  text-lg text-white text-center'>{tech}</p>
           <div className="py-3 text-center">
         <Link href={projectUrl} >
-
             <a className='text-center rounded-md bg-white text-gray-700 font-bold py-3 px-3 text-md cursor-pointer'>More Info</a>
         </Link>
           </div>

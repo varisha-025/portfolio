@@ -54,13 +54,13 @@ const Navbar = () => {
           ? 'fixed w-full h-20 shadow-xl z-[100]'
           : 'fixed w-full h-20 z-[100]'
       }>
-    
-        <div className='flex items-center justify-end w-full h-full px-14 2xl:px-16'>
 
-     
-         <div > 
+      <div className='flex items-center justify-end w-full h-full px-14 2xl:px-16'>
+
+
+        <div >
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
-          
+
             <Link href='/'>
               <li className='ml-10 text-md uppercase hover:text-[#b8c1ec] font-semibold'>Home</li>
             </Link>
@@ -86,88 +86,66 @@ const Navbar = () => {
           </div>
         </div>
 
-      
-      <div
-        className={
-          nav ? 'md:hidden fixed right-0 top-0 w-full h-screen bg-[#eebbc3]/70' : ''
-        }
-      >
+
         <div
           className={
-            nav
-              ? ' fixed right-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#b8c1ec] p-10 ease-in duration-500'
-              : 'fixed right-[-100%] top-0 p-10 ease-in duration-500'
+            nav ? 'md:hidden fixed right-0 top-0 w-full h-screen bg-[#eebbc3]/70' : ''
           }
         >
-          <div>
-            <div className='flex w-full items-center justify-end'>
-              
-              <div
-                onClick={handleNav}
-                className="p-3 cursor-pointer"
-              >
-                <AiOutlineClose />
+          <div
+            className={
+              nav
+                ? ' fixed right-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#b8c1ec] p-10 ease-in duration-500'
+                : 'fixed right-[-100%] top-0 p-10 ease-in duration-500'
+            }
+          >
+            <div>
+              <div className='flex w-full items-center justify-end'>
+
+                <div
+                  onClick={handleNav}
+                  className="p-3 cursor-pointer"
+                >
+                  <AiOutlineClose />
+                </div>
               </div>
-            </div>
-           
-          </div>
-          <div className='py-4 flex flex-col'>
-            <ul className='uppercase'>
-              <Link href='/'>
-                <li onClick={() => setNav(false)} className='py-4 text-[#232946] ml-4 text-sm'>
-                  Home
-                </li>
-              </Link>
-              <Link href='/#about'>
-                <li onClick={() => setNav(false)} className='py-4 text-[#232946] ml-4 text-sm'>
-                  About
-                </li>
-              </Link>
-              <Link href='/#skills'>
-                <li onClick={() => setNav(false)} className='py-4 text-[#232946] ml-4 text-sm'>
-                  Skills
-                </li>
-              </Link>
-              <Link href='/#projects'>
-                <li onClick={() => setNav(false)} className='py-4 text-[#232946] ml-4 text-sm'>
-                  Projects
-                </li>
-              </Link>
-              <Link href='/#contact'>
-                <li onClick={() => setNav(false)} className='py-4 text-[#232946] ml-4 text-sm'>
-                  Contact
-                </li>
-              </Link>
-            </ul>
-            <div className='flex py-10 ml-4'>
 
-            <div className='mx-3'>
-            <Link href={"https://www.linkedin.com/in/varisha-rashid-5a8848198/"}><i className="fa fa-linkedin fa-2x" style={{ "cursor": "pointer" }}></i></Link>
             </div>
-            
-            <div className='mx-3'>
-              <Link href={"https://github.com/varisha-025"}><FaGithub style={{ "height": "38px", "width": "44px", "cursor": "pointer" }} /></Link>
+            <div className='py-4 flex flex-col'>
+              <ul className='uppercase'>
+                <Link href='/'>
+                  <li onClick={() => setNav(false)} className='py-4 text-[#232946] hover:text-white ml-4 text-sm'>
+                    Home
+                  </li>
+                </Link>
+                <Link href='/#about'>
+                  <li onClick={() => setNav(false)} className='py-4 text-[#232946] hover:text-white ml-4 text-sm'>
+                    About
+                  </li>
+                </Link>
+                <Link href='/#skills'>
+                  <li onClick={() => setNav(false)} className='py-4 text-[#232946] hover:text-white ml-4 text-sm'>
+                    Skills
+                  </li>
+                </Link>
+                <Link href='/#projects'>
+                  <li onClick={() => setNav(false)} className='py-4 text-[#232946] hover:text-white ml-4 text-sm'>
+                    Projects
+                  </li>
+                </Link>
+                <Link href='/#contact'>
+                  <li onClick={() => setNav(false)} className='py-4 text-[#232946] hover:text-white ml-4 text-sm'>
+                    Contact
+                  </li>
+                </Link>
+              </ul>
               
-            </div>
-            <div className='mx-3'>
-              <Link href={"https://leetcode.com/varisha25/"}><SiLeetcode style={{ "height": "39px", "width": "46px", "cursor": "pointer" }} /></Link>
-
-            </div>
-            <div className='mx-3'>
-            <Link href={"mailto:varisharashid01@gmail.com"}><FontAwesomeIcon icon={faEnvelope} style={{ "height": "37px", "width": "46px", "cursor": "pointer" }} /></Link>
-
-            </div>
-
-            <div className='mx-3'>
-              <Link href="https://stackoverflow.com/users/15527533/varisha15" ><i className="fa fa-stack-overflow fa-2x" style={{"cursor": "pointer" }}></i></Link>
-            </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
-  
+
   );
 };
 

@@ -13,22 +13,14 @@ const About = () => {
           <h2 className='py-4 text-4xl md:text-3xl text-[#B8C1EC]'>Who I Am</h2>
 
           <p className='pt-5 text-[#fffffe] text-xl'>
-            Hello! My name is Varisha and I enjoy creating things that live on the internet
+            Hello! My name is Varisha and I enjoy creating things that live on the internet.
 
-            The tech industry is ever-evolving and I love being able to grow with it, while continually solidifying the fundamentals. I&apos;ve had the privilege of working at a start-up as a full stack intern in 2021. I have contributed in Open Source through GirlScript Summer of Code(GSSoC) in 2022. Presently, I&apos;m contributing in the official Gymkhana club of IIITDMJ.
+            The tech industry is ever-evolving and I love being able to grow with it, while continually solidifying the fundamentals. I&apos;ve had the privilege of working at a start-up <Link href="#">CRSP CONNECT</Link> as a full stack intern in 2021. I have contributed in Open Source through GirlScript Summer of Code(GSSoC) in 2022. I&apos;m an active member of BitByte's Development Wing and an organisation known as Women Who Code.
           </p>
           <p className="pt-4 text-[#fffffe] text-xl">
 
-            In addition to that, I also love joining communities, helping and mentoring new developers, and supporting organizations to promote diversity in tech. When I&apos;m not programming, I focus on my hobbies which are: playing badminton, doodling, meeting people and growing my network.
+            In addition to that, I like joining communities, mentoring new developers, and supporting organizations to promote diversity in tech. When I&apos;m not programming, I focus on my hobbies which are: playing badminton, doodling, meeting people and growing my network.
           </p>
-
-          {/* <div className='flex items-center justify-center md:justify-start'>
-            <Link href={"#contact"} ><button className='my-11 py-3 mr-7 md:mr-6 px-4 cursor-pointer text-lg shadow-gray-400 rounded-xl uppercase bg-gradient-to-r bg-[#EEBBC3] text-white '>Contact Me</button></Link>
-            <Link href="https://drive.google.com/file/d/1kxrxgUoeyppEoOJinNrGgg4s-IQAAoWI/view?usp=sharing" ><button className='my-11 py-3 px-4 ml-7 md:ml-2 cursor-pointer text-lg shadow-gray-400 rounded-xl uppercase bg-gradient-to-r bg-[#EEBBC3] text-white'>Resume</button></Link>
-
-          </div> */}
-
-
         </div>
         <div className='w-full shadow-gray-400  flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
 
@@ -38,7 +30,7 @@ const About = () => {
             alt="My image"
             width={280}
             height={400}
-            style={{borderRadius: "15px", boxShadow: "20px"}}
+            style={{ borderRadius: "15px", boxShadow: "20px" }}
           />
         </div>
       </div>

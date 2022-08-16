@@ -63,7 +63,7 @@ const fakenews = () => {
           </div>
         </div>
         <div className='pb-10'>
-          <Link href='/#projects'><span className=' underline text-white cursor-pointer '>Go Back</span></Link>
+          <Link href='/#projects'><span className=' underline text-white cursor-pointer hover:text-[#b8c1ec]'>Go Back</span></Link>
         </div>
       </div>
     </div>

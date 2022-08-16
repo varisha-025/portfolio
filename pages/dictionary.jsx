@@ -19,13 +19,13 @@ const fakenews = () => {
           src={dictionaryImg}
           alt='/'
         />
-        <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
+        <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2 sm:px-10'>
           <h2 className='py-2 pt-3 text-4xl text-[#292828]'>Dictionary App</h2>
           <h3 className='text-[#292828]'>Javascript/ HTML/ CSS</h3>
         </div>
       </div>
 
-      <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
+      <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8 sm:px-16'>
         <div className='col-span-4 mt-8'>
           <p className='uppercase text-xl tracking-widest text-[#eebbc3] py-4'>Project</p>
           <h2 className='text-[#b8c1ec]'>Overview</h2>
@@ -62,7 +62,7 @@ const fakenews = () => {
         </div>
         <div className='pb-10'>
           {/* <FontAwesomeIcon icon={faArrowLeft} className={styles.whitecol} /> */}
-          <Link href='/#projects'><span className=' underline text-white cursor-pointer '>Go Back</span></Link>
+          <Link href='/#projects'><span className=' underline text-white cursor-pointer hover:text-[#b8c1ec]'>Go Back</span></Link>
         </div>
       </div>
     </div>
