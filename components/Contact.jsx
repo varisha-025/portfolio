@@ -48,12 +48,26 @@ const Contact = () => {
               <div className=''>
                 <h2 className='py-2 my-3 text-center text-3xl text-[#232946]'>Varisha Rashid</h2>
                 <p className='text-2xl tracking-wide  text-center text-[#232946]'>Full-Stack Web Developer</p>
-                <p className='py-4 mx-4 ml-6 text-lg text-center'>
+                <p className='pb-4 pt-12 mx-4 ml-6 text-lg text-center'>
                   I&apos;m currently looking for full-time Web Development(preferably backend) internship opportunities! If you know of any positions available, please feel free to leave me a message.
                 </p>
               </div>
               <div>
-                <div className='flex pt-36 mx-2 pb-10 text-center items-center justify-center'>
+                
+              </div>
+            </div>
+          </div>
+
+          {/* right */}
+          <div className='col-span-3 w-full h-fit bg-[#fffffe] shadow-gray-400 rounded-xl lg:p-4'>
+            <div className="max-w-md mx-auto py-14">
+              <div className="max-w-md mx-auto">
+                <div className="text-center mb-14">
+                  <h1 className="text-4xl font-semibold text-gray-700 ">Let&apos;s Connect</h1>
+                  <p className="py-4 text-gray-500 ">Send me a message</p>
+                </div>
+                <div className="m-7">
+                <div className='flex mx-2 pb-10 text-center items-center justify-center'>
                   <div className='mx-3'>
                     <Link href={"https://www.linkedin.com/in/varisha-rashid-5a8848198/"}><i className="fa fa-linkedin fa-3x" style={{ "cursor": "pointer" }}></i></Link>
                   </div>
@@ -70,36 +84,10 @@ const Contact = () => {
                     <Link href="https://stackoverflow.com/users/15527533/varisha15" ><i className="fa fa-stack-overflow fa-2x" style={{ "cursor": "pointer" }}></i></Link>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          {/* right */}
-          <div className='col-span-3 w-full h-fit bg-[#fffffe] shadow-gray-400 rounded-xl lg:p-4'>
-            <div className="max-w-md mx-auto py-14">
-              <div className="max-w-md mx-auto">
-                <div className="text-center mb-14">
-                  <h1 className="text-4xl font-semibold text-gray-700 ">Let&apos;s Connect</h1>
-                  <p className="py-4 text-gray-500 ">Send me a message</p>
-                </div>
-                <div className="m-7">
-                  <form onSubmit={postContactForm} >
-                    <div className="mb-6">
-                      <label htmlFor="email" className="block mb-2 text-sm  ">Email Address</label>
-                      <input type="email" name="email" id="email" placeholder="you@company.com" value={email}
-                        onChange={(e) => setEmail(e.target.value)} className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring  focus:border-[#b8c1ec]" />
-                    </div>
-                    <div className="mb-6">
-                      <div className="flex justify-between mb-2">
-                        <label htmlFor="message" className="text-sm ">Message</label>
-                      </div>
-                      <textarea type="message" name="message" id="message" value={message}
-                        onChange={(e) => setMessage(e.target.value)} placeholder="Your message" className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring  focus:border-[#b8c1ec]" />
-                    </div>
                     <div className="mb-6 flex justify-center ">
-                      <button type="submit" className="w-24 px-2 py-3 focus:ring-2  shadow-gray-400 rounded-xl uppercase bg-gradient-to-r bg-[#EEBBC3] hover:scale-110 ease-in duration-300 hover:text-[#232946] text-white">Send</button>
+                    <Link href={"mailto:varisharashid01@gmail.com"}><button type="submit" className="w-28 px-2 py-3 focus:ring-2  shadow-gray-400 rounded-xl uppercase bg-gradient-to-r bg-[#EEBBC3] hover:scale-110 ease-in duration-300 hover:text-[#232946] text-white">Say Hello</button></Link>
                     </div>
-                  </form>
+                  
                 </div>
               </div>
             </div>
