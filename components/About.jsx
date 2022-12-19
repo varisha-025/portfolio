@@ -15,7 +15,7 @@ const About = () => {
           <p className='pt-5 text-[#fffffe] text-xl'>
             Hello! My name is Varisha and I enjoy creating things that live on the internet.
 
-            The tech industry is ever-evolving and I love being able to grow with it, while continually solidifying the fundamentals. I&apos;ve had the privilege of working at a start-up <Link href="https://www.linkedin.com/company/crsp-connect/">CRSP CONNECT</Link> as a full stack intern in 2021. I have contributed in Open Source through GirlScript Summer of Code(GSSoC) in 2022. I&apos;m an active member of BitByte&apos;s Development Wing and an organisation known as Women Who Code.
+            The tech industry is ever-evolving and I love being able to grow with it, while continually solidifying the fundamentals.I &apos;m currently working as a backend intern at Riyalto and I&apos;ve had the privilege of working at a start-up <Link href="https://www.linkedin.com/company/crsp-connect/">CRSP CONNECT</Link> as a full stack intern in 2021. I have contributed in Open Source through Hacktoberfest 2022 and GirlScript Summer of Code(GSSoC) in 2022. I&apos;m an active member of BitByte&apos;s Development Wing and an organisation known as Women Who Code.
           </p>
           <p className="pt-4 text-[#fffffe] text-xl">
 
