@@ -12,7 +12,7 @@ const Main = () => {
           <h1 className='py-4 text-white px-8'>
             Hi, I&apos;m <span className='text-[#EEBBC3] md:max-w-lg py-2'> Varisha Rashid</span>
           </h1>
-          <h1 className='py-2 text-white pb-8'>A Full Stack Web Developer</h1>
+          <h1 className='py-2 text-white pb-8'>A Backend web developer</h1>
           <p className='py-4 text-white max-w-[70%] m-auto text-lg'>
             I&apos;m most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time, I like working on open source projects.
           </p>
